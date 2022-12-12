@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatmovie?</title>
+        <link rel="stylesheet" href="movie2.css">
+    </head>
+    <body>
+        <figure class="movie">
+            <div class="movie__hero">
+              <img src="avatar 2.jpg" alt="movie image" class="movie_img"></div>
+              <div class="movie__content">
+              <div class="movie__title">
+                <h1 class="heading__primary">Avatar</h1>
+                <div class="movie__tag movie__tag--1">#action</div>
+                <div class="movie__tag movie__tag--2">#adventure</div>
+                <div class="movie__tag movie__tag--3">#fantasy</div>
+                
+              </div>
+              <p class="movie__description">
+                A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes
+                 torn between following his orders and protecting the world he feels is his home.
+              </p>
+              <div class="movie__details">
+                <p class="movie__detail">2009</p>
+                <p class="movie__detail"> 2h 42m</p>
+                <p class="movie__detail">$237 million</p>
+              </div>
+            </div>
+            <div class="movie__price">$2.923 billion</div>
+          </figure>
+          <div class="commentsection">
+            <p> Reviews </p>
+            <form action="post" class="cs">
+            <textarea name="cs" id="cs" cols="100" rows="5" placeholder="Write your review here"></textarea>
+          </form>
+          </div>
+          <div class="Post"><button onclick="displayName()">Post</button></div>
+          <p id="show_c">
+          </p>
+       </body>
+       <script>
+          function displayName() {
+             var cp = document.getElementById("cs").value;
+             document.getElementById("show_c").innerHTML = "user commented" +cp;
+          }
+        
+       </script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatmovie?</title>
+        <link rel="stylesheet" href="movie2.css">
+    </head>
+    <body>
+        <figure class="movie">
+            <div class="movie__hero">
+              <img src="kill.jpg" alt="movie image" class="movie_img"></div>
+              <div class="movie__content">
+              <div class="movie__title">
+                <h1 class="heading__primary">Kill Bill </h1>
+                <div class="movie__tag movie__tag--1">#action</div>
+                <div class="movie__tag movie__tag--2">#drama</div>
+                <div class="movie__tag movie__tag--3">#crime</div>
+                
+              </div>
+              <p class="movie__description">
+                After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.
+              </p>
+              <div class="movie__details">
+                <p class="movie__detail">2003</p>
+                <p class="movie__detail">1h 51m</p>
+                <p class="movie__detail">$3 crores</p>
+              </div>
+            </div>
+            <div class="movie__price">$18.09</div>
+          </figure>
+          <div class="commentsection">
+            <p> Reviews </p>
+            <form action="post" class="cs">
+            <textarea name="cs" id="cs" cols="100" rows="5" placeholder="Write your review here"></textarea>
+          </form>
+          </div>
+          <div class="Post"><button onclick="displayName()">Post</button></div>
+          <p id="show_c">
+          </p>
+       </body>
+       <script>
+          function displayName() {
+             var cp = document.getElementById("cs").value;
+             document.getElementById("show_c").innerHTML = "user commented" +cp;
+          }
+        
+       </script>
+</html>

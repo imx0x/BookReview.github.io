@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #444;
+    background:linear-gradient(to right bottom, #A9C9FF 0%, #FFBBEC 100%); 
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    margin-left: 15%;
+}
+
+.movie {
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+   margin: 0, 100;
+    overflow: hidden;
+}
+
+.movie__hero {
+  flex: 0 45% 45%;
+}
+
+.movie__img {
+    width: 100%;
+    display:block;
+}
+
+.movie__content {
+    background-color: #fff;
+    flex: 1;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__price {
+    background:linear-gradient(to bottom, #A9C9FF 0%, #FFBBEC 100%);
+    flex: 0 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading__primary {
+    font-size: 16px;
+    margin-right: auto;
+    color: royalblue;
+}
+
+.movie__tag {
+    font-size: 10px;
+    color: #fff;
+  padding: 2px 7px;
+  border-radius: 100px;
+  margin-right: 8px;
+  display: block;
+  text-transform: uppercase;
+
+}
+
+.movie__tag--1 {
+  background-color: #A9C9FF;
+}
+
+.movie__tag--2 {
+    background-color:#FFBBEC;
+}
+
+.movie__tag--3 {
+    background-color: #A9C9FF;
+}
+
+.movie__description {
+    font-size: 14px;
+}
+
+.movie__details {
+    display: flex;
+    margin: auto;
+}
+
+.movie__detail {
+   font-size: 13px;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+}
+textarea{
+    padding: 14px;
+    margin: 20px 0px;
+}
+hr{
+    margin: 20px 0px;
+    color:white;
+    width:60%;
+}
+#show_c{
+    color: black;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    float: left;
+}
+
+.Post button
+{
+    padding: 12px 12px;
+    color:black;
+    background: linear-gradient(to right bottom, #A9C9FF 0%, #FFBBEC 100%);
+}
+form #showc
+{
+    padding: 20px 0;
+    background: linear-gradient(to right top, #FFDFA9 0%, #A9FFDF 100%)
+}
+.post:hover
+{
+    cursor:pointer;
+}

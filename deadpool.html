@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatmovie?</title>
+        <link rel="stylesheet" href="movie2.css">
+    </head>
+    <body>
+        <figure class="movie">
+            <div class="movie__hero">
+              <img src="deadpool_f.jpg" alt="movie image" class="movie_img"></div>
+              <div class="movie__content">
+              <div class="movie__title">
+                <h1 class="heading__primary">Deadpool</h1>
+                <div class="movie__tag movie__tag--1">#action</div>
+                <div class="movie__tag movie__tag--2">#adventure</div>
+                <div class="movie__tag movie__tag--3">#comedy</div>
+                
+              </div>
+              <p class="movie__description">
+                A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.
+              </p>
+              <div class="movie__details">
+                <p class="movie__detail">2016</p>
+                <p class="movie__detail"> 1h 48m</p>
+                <p class="movie__detail">$5.8 crores</p>
+              </div>
+            </div>
+            <div class="movie__price">$78.31</div>
+          </figure>
+          <div class="commentsection">
+            <p> Reviews </p>
+            <form action="post" class="cs">
+            <textarea name="cs" id="cs" cols="100" rows="5" placeholder="Write your review here"></textarea>
+          </form>
+          </div>
+          <div class="Post"><button onclick="displayName()">Post</button></div>
+          <p id="show_c">
+          </p>
+       </body>
+       <script>
+          function displayName() {
+             var cp = document.getElementById("cs").value;
+             document.getElementById("show_c").innerHTML = "user commented" +cp;
+          }
+        
+       </script>
+</html>

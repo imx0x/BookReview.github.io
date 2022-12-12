@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  .topnav
+{
+color:white;
+background-color: #f2f2f2;
+overflow: hidden;
+padding: 40px;
+}
+
+.topnav .right
+{
+  float: right;
+  padding: 14px 16px;
+  color:#f9f9f9;
+  background-color:#f2f2f2;
+  width:5%;
+}
+.topnav .right:hover
+{
+  color:#f9f9f9;
+  background-color: #f2f2f2;
+  padding: 14px 16px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .topnav a:hover {
+    background-color:yellow ;
+    color: black;
+  }
+
+ 
+  .topnav input[type="text"]
+  {
+    float:right;
+    padding: 14px 16px;
+    width: 30%;
+
+  }
+  .dropbtn{
+    float: left;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+  }
+  
+
+  .dropdown-content a {
+    float: right;
+    color: yellow;
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    flex-direction: column;
+  }
+  
+
+  .dropdown-content a:hover {
+    background-color: yellow;
+    color:black;
+    flex-direction: column;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+    background-color: yellow;
+    color:black;
+    flex-direction: column;
+
+  }
+  
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatmovie?</title>
+        <link rel="stylesheet" href="movie2.css">
+    </head>
+    <body>
+        <figure class="movie">
+            <div class="movie__hero">
+              <img src="Shutter.jpeg" alt="movie image"  class="movie_img"></div>
+              <div class="movie__content">
+              <div class="movie__title">
+                <h1 class="heading__primary">Shutter Island</h1>
+                <div class="movie__tag movie__tag--1">#mystery</div>
+                <div class="movie__tag movie__tag--2">#thriller</div>
+                
+              </div>
+              <p class="movie__description">
+                In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.
+              </p>
+              <div class="movie__details">
+                <p class="movie__detail">2010</p>
+                <p class="movie__detail">2h 18m</p>
+                <p class="movie__detail">$8 crores</p>
+              </div>
+            </div>
+            <div class="movie__price">$29.48</div>
+          </figure>
+          <div class="commentsection">
+            <p> Reviews </p>
+            <form action="post" class="cs">
+            <textarea name="cs" id="cs" cols="100" rows="5" placeholder="Write your review here"></textarea>
+          </form>
+          </div>
+          <div class="Post"><button onclick="displayName()">Post</button></div>
+          <p id="show_c">
+          </p>
+       </body>
+       <script>
+          function displayName() {
+             var cp = document.getElementById("cs").value;
+             document.getElementById("show_c").innerHTML = "user commented" +cp;
+          }
+        
+       </script>
+</html>

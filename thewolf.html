@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatmovie?</title>
+        <link rel="stylesheet" href="movie2.css">
+    </head>
+    <body>
+        <figure class="movie">
+            <div class="movie__hero">
+              <img src="wolf.jpeg" alt="movie image" class="movie_img"></div>
+              <div class="movie__content">
+              <div class="movie__title">
+                <h1 class="heading__primary">The Wolf of Wall Street</h1>
+                <div class="movie__tag movie__tag--1">#biography</div>
+                <div class="movie__tag movie__tag--2">#crime</div>
+                <div class="movie__tag movie__tag--3">#comedy</div>
+                
+              </div>
+              <p class="movie__description">Based on the true story of Jordan Belfort, 
+                from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.
+              </p>
+              <div class="movie__details">
+                <p class="movie__detail">2013</p>
+                <p class="movie__detail"> 3h 0min</p>
+                <p class="movie__detail">$10 crores</p>
+              </div>
+            </div>
+            <div class="movie__price">$40.69</div>
+          </figure>
+          <div class="commentsection">
+            <p> Reviews </p>
+            <form action="post" class="cs">
+            <textarea name="cs" id="cs" cols="100" rows="5" placeholder="Write your review here"></textarea>
+          </form>
+          </div>
+          <div class="Post"><button onclick="displayName()">Post</button></div>
+          <p id="show_c">
+          </p>
+       </body>
+       <script>
+          function displayName() {
+             var cp = document.getElementById("cs").value;
+             document.getElementById("show_c").innerHTML = "user commented" +cp;
+          }
+        
+       </script>
+</html>
